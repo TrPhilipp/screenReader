@@ -16,8 +16,6 @@ const takeScreen = () => {
         canvas.getContext('2d').drawImage(bitmap, 0, 0);
 
         canvas.toBlob(async (blob) => {
-          console.log('output blob:', blob);
-
           const formData = new FormData();
 
           formData.append('screen', blob);
